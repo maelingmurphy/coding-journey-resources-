@@ -1,61 +1,129 @@
+/* Color Palette Testing
+#283D3B
+#197278
+#EDDDD4
+#C44536
+#772E25
+
+https://coolors.co/588b8b-ffffff-ffd5c2-f28f3b-c8553d
+*/
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: sans-serif;
     scroll-behavior: smooth;
 }
 
+/* Document level adjustments */
+html {
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
 body {
-    background-color: #83c5be;
+    background-color: #ffd5c2;
 }
 
-.navbar {
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 900px) {
+    html { font-size: 15px; }
+}
+
+@media (max-width: 400px) {
+    html { font-size: 13px; }
+}
+
+/* Modules will scale with document */
+
+nav {
     font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999; 
 }
 
-.navbar__container {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
+header {
+    font-size: 1.5rem;
 }
 
-#navbar__logo {
-    display: flex;
+main {
+    font-size: 1.2rem;
+}
+
+footer {
+    font-size: 0.75rem;
+}
+
+/* Type will scale with modules */
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+/* NAVBAR */
+
+.navbar-custom {
+    background-color: #ffd5c2 !important; 
+}
+
+
+
+
+
+/* The dropdown container */
+
+
+/* HEADER */
+header h1, p {
+    text-align: center;   
+}
+
+header h1 {
+    padding: 3rem 2rem 1rem 2rem;
+}
+
+header p {
+    padding: 0.75rem 1rem 6rem 1rem;
+}
+
+/* MAIN */
+
+main {
+    background-color: #fff;
+    padding: 5rem 0 0 0;
+}
+section h3 {
+    text-align: center;
+}
+
+.resources__container {
+    padding: 2rem 0 1rem 0;
+}
+.resources {
+    padding: 4rem 1rem 6rem 1rem;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 2rem;
+    justify-content: center;
+    align-content: center;
+    grid-auto-flow: column;
+}
+
+.resource__box {
+    background-color: #588b8b;
+    text-align: center;
     align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
+    padding: 3rem 0 3rem 0;
 }
 
-.navbar__menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-
-.navbar__item {
-    height: 80px;
-}
-
-.navbar__links {
-    color: #ffffff;
-    display: flex;
+/* FOOTER */
+footer {
+    background-color: ##ffd5c2;
     align-items: center;
     justify-content: center;
-    width: 125px;
-    text-decoration: none;
-    height: 100%;
+    padding: 1rem 0;
 }

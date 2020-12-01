@@ -2,33 +2,179 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Resources</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <!--My Custom CSS-->
     <link rel="stylesheet" href="styles.css">
+
+    <title>Coding Resources</title>
 
 </head>
 <body>
    <!-- Navbar --> 
+   
+   <!--Bootstrap Navbar-->
+   <nav class="navbar navbar-custom navbar-expand-md navbar-light bg-light">
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Languages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">C</a>
+            <a class="dropdown-item" href="#">Python</a>
+            <a class="dropdown-item" href="#">Javascript</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Tools
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Code Editors</a>
+              <a class="dropdown-item" href="#">Coding Sandboxes</a>
+              <a class="dropdown-item" href="#">Version Control</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Communities
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Online Forums</a>
+              <a class="dropdown-item" href="#">Podcasts</a>
+              <a class="dropdown-item" href="#">Coding Challenges</a>
+            </div>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+   <!--my navbar
    <nav class="navbar">
        <div class="navbar__container">
-            <a href="#home" id="navbar__logo">Coding Journey Resources</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
                     <a href="#home" class="navbar__links" id="home-page">Home</a>
                 </li>
-                <li class="navbar__item">
-                    <a href="#resources" class="navbar__links" id="resources-page">Resources</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#communities" class="navbar__links" id="communities-page">Communities</a>
-                </li>
+                
+
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Languages
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                      <a class="dropdown-item" href="#">C</a>
+                      <a class="dropdown-item" href="#">Python</a>
+                      <a class="dropdown-item" href="#">JavaScript</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Tools
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                      <a class="dropdown-item" href="#">Code Editors</a>
+                      <a class="dropdown-item" href="#">Coding Sandboxes</a>
+                      <a class="dropdown-item" href="#">Version Control</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Communities
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+                      <a class="dropdown-item" href="#">Online Forums</a>
+                      <a class="dropdown-item" href="#">Podcasts</a>
+                      <a class="dropdown-item" href="#">Coding Challenges</a>
+                    </div>
+                </div>
+
             </ul>
        </div>    
    </nav>
+   --!>
+   <header>
+       <h1>Coding Journey Resources</h1>
+       <p>A collection of resources I've gathered on my self-taught coding journey.</p>
+   </header>
+
+   <main>
+        <section class="resources__container" id=#programming-languages>
+            <h3>Programming Languages</h3>
+            <div class="resources">
+                <div class="resource__box">
+                    <h4>C</h4>
+                </div>
+                <div class="resource__box">
+                    <h4>Python</h4>
+                </div>
+                <div class="resource__box">
+                    <h4>JavaScript</h4>
+                </div>
+            </div>
+            </section>
+
+        <section class="resources__container" id=#coding-tools>
+            <h3>Coding Tools</h3>
+            <div class="resources">
+                <div class="resource__box">
+                    <h4>Code Editors</h4>
+                </div>
+                <div class="resource__box">
+                    <h4>Coding Sandboxes</h4>
+                </div>
+                <div class="resource__box">
+                    <h4>Version Control</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="resources__container" id=#coding-communities>
+            <h3>Coding Communities</h3>
+            <div class="resources">
+                <div class="resource__box">
+                    <h4>Online Forums</h4>
+                </div>
+                <div class="resource__box">
+                    <h4>Podcasts</h4>
+                </div>
+                <div class="resource__box">
+                    <h4>Coding Challenges</h4>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+       <p>&copy; 2020 <a href="https://twitter.com/maelingcodes">@maelingcodes</a></p>
+    </footer>
+
+    <!--Bootstrap JS Scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 </body>
 </html>
