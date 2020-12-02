@@ -1,10 +1,4 @@
 /* Color Palette Testing
-#283D3B
-#197278
-#EDDDD4
-#C44536
-#772E25
-
 https://coolors.co/588b8b-ffffff-ffd5c2-f28f3b-c8553d
 */
 
@@ -17,14 +11,15 @@ https://coolors.co/588b8b-ffffff-ffd5c2-f28f3b-c8553d
 }
 
 /* Document level adjustments */
+
+
+
 html {
     font-size: 17px;
     font-family: sans-serif;
 }
 
-body {
-    background-color: #ffd5c2;
-}
+
 
 @media (max-width: 900px) {
     html { font-size: 15px; }
@@ -78,6 +73,10 @@ h3 {
 
 
 /* HEADER */
+
+header {
+    background-color:#ffd5c2;
+}
 header h1, p {
     text-align: center;   
 }
@@ -94,8 +93,9 @@ header p {
 
 main {
     background-color: #fff;
-    padding: 5rem 0 0 0;
+    padding: 2rem 0 0 0;
 }
+
 section h3 {
     text-align: center;
 }
@@ -121,9 +121,56 @@ section h3 {
 }
 
 /* FOOTER */
+
+/*Sticky Footer*/
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem; /* Footer height */
+}
+
 footer {
-    background-color: ##ffd5c2;
-    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; /*Footer height*/
+    background-color: #ffd5c2;
+}
+
+footer p {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* NOT HOME PAGE */
+.options {
+    display: grid;
+    padding-top: 0rem;
+    grid-template-columns: 20% 20% 20%;
+    grid-gap: 2rem;
     justify-content: center;
-    padding: 1rem 0;
+    align-content: center;
+}
+
+.options__box {
+    background-color: #f28f3b;
+    border: 2px solid black;
+    text-align: center;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.options-info {
+    padding: 5rem 5rem;
+}
+.options-info p {
+    text-align: left;
+}
+
+.options-block {
+    padding-bottom: 2rem;
 }
