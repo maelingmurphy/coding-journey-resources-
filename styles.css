@@ -166,6 +166,7 @@ footer p {
 
 .options-info {
     padding: 5rem 5rem;
+    display: none; /* Initially don't see any content until onclick */
 }
 .options-info p {
     text-align: left;
