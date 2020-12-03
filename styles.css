@@ -19,6 +19,11 @@ html {
     font-family: sans-serif;
 }
 
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 
 @media (max-width: 900px) {
@@ -103,23 +108,35 @@ section h3 {
 .resources__container {
     padding: 2rem 0 1rem 0;
 }
+
 .resources {
     padding: 4rem 1rem 6rem 1rem;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-gap: 2rem;
-    justify-content: center;
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis horizontal */
+    justify-content: space-around;
     align-content: center;
-    grid-auto-flow: column;
 }
 
 .resource__box {
     background-color: #588b8b;
     text-align: center;
-    align-items: center;
+    align-content: center;
     padding: 3rem 0 3rem 0;
+    width: 20rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.resource__box a {
+    color: black;
+}
+
+.resource__box a:hover {
+    color: white;
+    text-decoration: none;
+}
 /* FOOTER */
 
 /*Sticky Footer*/
@@ -176,4 +193,26 @@ footer p {
 
 .options-block {
     padding-bottom: 2rem;
+}
+
+/* MEDIA QUERIES */
+
+/* Home Page*/
+
+
+
+@media (max-width: 1100px) {
+    .resources {
+        display: flex;
+        flex-direction: column; /* make main axis vertical */
+        justify-content: center; /* center items vertically */
+        align-items: center; /* center items horizontally */
+    }
+
+    .resource__box {
+        margin: 1rem;
+        text-align: center;
+    }
+
+    
 }
