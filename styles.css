@@ -70,6 +70,16 @@ h3 {
     background-color: #ffd5c2 !important; 
 }
 
+/* Animates border under link during hover state
+.nav-link {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 800ms ease-in-out;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid black;
+}
+*/
 
 
 
@@ -175,12 +185,9 @@ footer p {
     align-content: center;
 }
 
-.options__box {
-    background-color: #f28f3b;
+.options-box {
     border: 2px solid black;
-    text-align: center;
-    align-items: center;
-    padding: 1rem 1rem 1rem 1rem;
+    cursor: pointer;
 }
 
 .options-info {
