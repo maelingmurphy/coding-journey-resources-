@@ -16,7 +16,9 @@ html {
 }
 
 main {
+    max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 
@@ -121,6 +123,14 @@ header p {
 
 .options-block li {
     font-family: 'Roboto';
+}
+
+a {
+    color: #16BAC5;
+}
+
+a:hover {
+    color: #DB3069;
 }
 
 /* HEADER */
@@ -264,7 +274,8 @@ footer p a:hover, .tagline a:hover {
 }
 .options {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 2em;
 }
 /*
 .options {
@@ -337,6 +348,13 @@ footer p a:hover, .tagline a:hover {
         margin: 1rem;
         text-align: center;
     }
+
+@media (max-width: 700px) {
+    .options-box h3 {
+        font-size: 1em;
+
+    }
+}
  
 }
 /* Need to figure out how to simply this code */
