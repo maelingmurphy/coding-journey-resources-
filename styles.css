@@ -1,7 +1,3 @@
-/* Color Palette Testing
-https://coolors.co/588b8b-ffffff-ffd5c2-f28f3b-c8553d
-*/
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,7 +16,6 @@ html {
 }
 
 main {
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -65,10 +60,23 @@ h3 {
     font-size: 2em;
 }
 /* NAVBAR */
-
 .navbar-custom {
-    background-color: #ffd5c2 !important; 
+    background-color: #000 !important;
 }
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #F0803C !important;
+}
+
+button.navbar-toggler, .navbar-toggler-icon {
+    background-color: #fff !important;
+}
+
+
 
 /* Animates border under link during hover state
 .nav-link {
@@ -86,29 +94,68 @@ h3 {
 
 /* The dropdown container */
 
+/* TYPOGRAPHY */
+h1, h2, h3, h4 {
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.nav-link {
+    font-family:'Raleway' !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+}
+
+header p {
+    font-family: 'Roboto Slab';
+}
+
+.sub-head {
+    font-family: 'Roboto Slab';
+}
+
+.options-container p {
+    font-family: 'Roboto Slab';
+}
+
+.options-block li {
+    font-family: 'Roboto';
+}
 
 /* HEADER */
 
 header {
-    background-color:#ffd5c2;
+    background-color: #000;
 }
+
 header h1, p {
-    text-align: center;   
+    text-align: center;
+    color: white;
+    
 }
 
 header h1 {
-    padding: 3rem 2rem 1rem 2rem;
+    padding: 3rem 2rem 0rem 2rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 0px #DB3069;
+    font-weight: 900;
 }
 
 header p {
-    padding: 0.75rem 1rem 6rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 0rem !important;
+}
+
+.tagline {
+    font-size: 1.2rem;
 }
 
 /* MAIN */
 
 main {
-    background-color: #fff;
-    padding: 2rem 0 0 0;
+    background-color: #000;
 }
 
 section h3 {
@@ -116,8 +163,15 @@ section h3 {
 }
 
 .resources__container {
-    padding: 2rem 0 1rem 0;
+    padding: 1rem 0 1rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.resources__container h4 {
+    font-size: 1.5em;
+}
+
 
 .resources {
     padding: 4rem 1rem 6rem 1rem;
@@ -128,7 +182,7 @@ section h3 {
 }
 
 .resource__box {
-    background-color: #588b8b;
+    border: 3px solid #16BAC5;
     text-align: center;
     align-content: center;
     padding: 3rem 0 3rem 0;
@@ -137,10 +191,11 @@ section h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 10px 10px rgba(219,48,105,1);
 }
 
 .resource__box a {
-    color: black;
+    color: #fff;
 }
 
 .resource__box a:hover {
@@ -163,19 +218,55 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem; /*Footer height*/
-    background-color: #ffd5c2;
+    height: 3rem; /*Footer height*/
+    background-color: #DB3069;
 }
 
 footer p {
     font-size: 1.2rem;
     text-align: center;
-    padding: 0.5rem;
+    color: #fff;
+    padding-top: 0.5rem;
 }
 
+footer p a, .tagline a {
+    background-color: #000;
+    color: #fff;
+}
+
+footer p a:hover, .tagline a:hover {
+    color: #16BAC5;
+}
 /* NOT HOME PAGE */
 /* Create sidebar with options-container*/
 
+.not-home-main {
+    background-color: #fff;
+}
+
+.header-nothome {
+    font-size: 2em;
+}
+.header-p {
+    font-family: 'Roboto Slab';
+    font-size: 3rem;
+}
+
+.options-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 3em;
+}
+
+.options-container p{
+    color: #000;
+    font-size: 1.5em;
+}
+.options {
+    display: flex;
+    justify-content: space-evenly;
+}
+/*
 .options {
     display: grid;
     padding-top: 0rem;
@@ -184,14 +275,43 @@ footer p {
     justify-content: center;
     align-content: center;
 }
-
+*/
 .options-box {
     border: 2px solid black;
+    background-color: white;
     cursor: pointer;
+    padding: 0.5em;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: 0.3s;
+}
+
+.options-box:hover {
+    background-color: #16BAC5;
+    color: white;
+
+}
+
+.options-box h3 {
+    font-size: 2rem;
+}
+
+.options-heading {
+    padding-bottom: 2rem;
+}
+
+.sub-head {
+    padding-top: 1rem;
+}
+
+.sub-head {
+    text-decoration: underline;
 }
 
 .options-info {
-    padding: 5rem 5rem;
+    padding: 4rem 5rem 4rem 5rem;
     display: block;
 }
 .options-info p {
@@ -202,11 +322,8 @@ footer p {
     padding-bottom: 2rem;
 }
 
+
 /* MEDIA QUERIES */
-
-/* Home Page*/
-
-
 
 @media (max-width: 1100px) {
     .resources {
@@ -216,10 +333,9 @@ footer p {
         align-items: center; /* center items horizontally */
     }
 
-    .resource__box {
+    .resource__box, .options-box {
         margin: 1rem;
         text-align: center;
     }
-
-    
+ 
 }

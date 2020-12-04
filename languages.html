@@ -10,6 +10,11 @@
     <!--My Custom CSS-->
     <link rel="stylesheet" href="styles.css">
 
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+
     <title>Coding Resources</title>
 
 </head>
@@ -52,8 +57,8 @@
             </nav>
 
             <header>
-                <h1>Coding Journey Resources</h1>
-                <p>Programming Languages</p>
+                <h1 class="header-nothome">Coding Journey Resources</h1>
+                <p class="header-p">Programming Languages</p>
             </header>
 
             <main class="not-home-main">
@@ -62,9 +67,15 @@
 
                     <!--The Options Buttons-->
                     <div class="options">       
-                        <h3 class="options-box" id="C-button">C</h3>
-                        <h3 class="options-box" id="Python-button">Python</h3>
-                        <h3 class="options-box" id="JavaScript-button">JavaScript</h3>
+                        <div class="options-box" id="C-button">
+                            <h3>C</h3>
+                        </div>
+                        <div class="options-box" id="Python-button">
+                            <h3>Python</h3>
+                        </div>
+                        <div class="options-box" id="JavaScript-button">
+                            <h3>JavaScript</h3>
+                        </div>  
                     </div>
                 </div>
 
@@ -72,7 +83,7 @@
 
                     <!--The Options Content Blocks-->
                     <div class="options-info" id="C-info">
-                        <h3> C Resources</h3>
+                        <h3 class="options-heading"> C Resources</h3>
                         <div class="options-block">
                             <h4>FREE Online Courses & Overview Articles</h4>
                             <ul>
@@ -90,12 +101,12 @@
 
                         <div class="options-block">
                             <h4>Various Tutorials</h4>
-                            <h5>Functions in C</h3>
+                            <h5 class="sub-head">Functions in C</h3>
                             <ul>
                                 <li><a href="https://www.youtube.com/watch?v=DbR-0GfnQOs" target="_blank">Creating Functions in C</a></li>
                                 <li><a href="https://www.youtube.com/watch?v=_0Lp3utEEcs" target="_blank">Calling Functions in C</a></li>
                             </ul>
-                            <h5>Working with Files in C</h3>
+                            <h5 class="sub-head">Working with Files in C</h3>
                             <ul>
                                 <li><a href="https://www.udemy.com/blog/fread-c/" target="_blank">Reading from files in C</a></li>
                                 <li><a href="https://beginnersbook.com/2014/01/c-file-io/" target="_blank">File Input/Output (I/O) in C</a></li>
@@ -105,7 +116,7 @@
 
                     
                     <div class="options-info" id="Python-info">
-                        <h3> Python Resources</h3>
+                        <h3 class="options-heading"> Python Resources</h3>
                         <div class="options-block">
                             <h4>FREE Online Courses & Overview Articles</h4>
                             <ul>
@@ -124,7 +135,7 @@
                     </div>
                 
                     <div class="options-info" id="JavaScript-info">
-                        <h3> JavaScript Resources</h3>
+                        <h3 class="options-heading"> JavaScript Resources</h3>
                         <div class="options-block">
                             <h4>FREE Online Courses & Overview Articles</h4>
                             <ul>
@@ -141,7 +152,7 @@
                             </ul>
                         </div>
                     </div>
-                        
+                    <!-- Can add a jump to top button for easy navigation once the resource list gets long -->    
                     
                 </div>
             </main>
@@ -149,7 +160,7 @@
         </div>
 
             <footer class = "footer">
-            <p>&copy; 2020 <a href="https://twitter.com/maelingcodes" target="_blank">@maelingcodes</a></p>
+                <p>&copy; 2020 Created by <a href="https://twitter.com/maelingcodes">@maelingcodes</a></p>
             </footer>
     </div>
     <!--Bootstrap JS Scripts-->
