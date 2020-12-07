@@ -61,6 +61,11 @@ h2 {
 h3 {
     font-size: 2em;
 }
+/* BODY */
+body {
+    background-color: #000;
+}
+
 /* NAVBAR */
 .navbar-custom {
     background-color: #000 !important;
