@@ -62,7 +62,7 @@ h3 {
     font-size: 2em;
 }
 /* BODY */
-body {
+#body {
     background-color: #000 !important;
 }
 
