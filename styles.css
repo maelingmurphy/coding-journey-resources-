@@ -63,7 +63,7 @@ h3 {
 }
 /* BODY */
 body {
-    background-color: #000;
+    background-color: #000 !important;
 }
 
 /* NAVBAR */
